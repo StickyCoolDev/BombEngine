@@ -19,35 +19,26 @@
         Padding="10">
         <HorizontalStackLayout
             Spacing="10">
-            <Label
-                x:Name="TitleLabel"
+            <Button
+                x:Name="TitleButton"
                 Text="Bomb Engine"
                 FontSize="40"
-                FontFamily="MPLUSRoundedMedium" />
+                FontFamily="MPLUSRoundedMedium"
+                BackgroundColor="Transparent"
+                TextColor="White"
+                Clicked="OnTitleButtonCliked" />
             <Button
                 x:Name="NewProjectButton"
                 Text="New Project"
                 BackgroundColor="Gray"
                 MinimumWidthRequest="50"
-                CornerRadius="5" />
+                CornerRadius="5"
+                Clicked="AddNewProject" />
         </HorizontalStackLayout>
         <VerticalStackLayout
             x:Name="ProjectLayoutContainer"
             BackgroundColor="LightGray"
             Padding="10"
-            Spacing="10">
-            <ScrollView
-                MaximumHeightRequest="100">
-                <Button
-                    Text="dhjdjdhduud"
-                    FontSize="20" />
-                <Button
-                    Text="dhjdjdhduud"
-                    FontSize="20" />
-                <Button
-                    Text="dhjdjdhduud"
-                    FontSize="20" />
-            </ScrollView>
-        </VerticalStackLayout>
+            Spacing="10"></VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

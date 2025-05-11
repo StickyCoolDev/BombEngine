@@ -12,6 +12,7 @@ namespace BombEngine
         {
             InitializeComponent();
             Routing.RegisterRoute(nameof(NewProjectPage), typeof(NewProjectPage));
+            Routing.RegisterRoute(nameof(AllLicensePage), typeof(AllLicensePage));
         }
     }
 }
