@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    
+    xmlns:local="clr-namespace:BombEngine"
+    
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BombEngine.MainPage"
+    Title="">
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior
+            StatusBarColor="Black"
+            StatusBarStyle="LightContent" />
+    </ContentPage.Behaviors>
+    <VerticalStackLayout
+        Spacing="10"
+        Padding="10">
+        <HorizontalStackLayout
+            Spacing="10">
+            <Label
+                x:Name="TitleLabel"
+                Text="Bomb Engine"
+                FontSize="40"
+                FontFamily="MPLUSRoundedMedium" />
+            <Button
+                x:Name="NewProjectButton"
+                Text="New Project"
+                BackgroundColor="Gray"
+                MinimumWidthRequest="50"
+                CornerRadius="5" />
+        </HorizontalStackLayout>
+        <VerticalStackLayout
+            x:Name="ProjectLayoutContainer"
+            BackgroundColor="LightGray"
+            Padding="10"
+            Spacing="10">
+            <ScrollView
+                MaximumHeightRequest="100">
+                <Button
+                    Text="dhjdjdhduud"
+                    FontSize="20" />
+                <Button
+                    Text="dhjdjdhduud"
+                    FontSize="20" />
+                <Button
+                    Text="dhjdjdhduud"
+                    FontSize="20" />
+            </ScrollView>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

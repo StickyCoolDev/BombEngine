@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net9.0-android</TargetFrameworks>
+    <UseMaui>true</UseMaui>
+    <SingleProject>true</SingleProject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>latestMajor</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <UseMauiEssentials>false</UseMauiEssentials>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Pages/NewProjectPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
