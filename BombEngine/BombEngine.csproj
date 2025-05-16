@@ -30,5 +30,12 @@
     <EmbeddedResource Update="Pages/AllLicencesPage/AllLicensePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="" />
+    <EmbeddedResource Update="Pages/CreateProjectLoadingPage/CreateProjectLoadingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages/Editor/EditorPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

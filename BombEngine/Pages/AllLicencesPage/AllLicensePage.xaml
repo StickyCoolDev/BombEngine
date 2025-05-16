@@ -9,10 +9,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="BombEngine.AllLicensePage"
     Title="All Assets and License">
-    <VerticalStackLayout
-        Padding="10">
-        <Label
-            Text="M Plus Rounded"
-            FontSize="30" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="10">
+            <Label
+                Text="M Plus Rounded"
+                FontSize="30" />
+            <Label
+                x:Name="MPlusRounded" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

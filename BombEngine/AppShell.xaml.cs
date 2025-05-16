@@ -11,8 +11,12 @@ namespace BombEngine
         public AppShell()
         {
             InitializeComponent();
+
+            // Register all of the pages
             Routing.RegisterRoute(nameof(NewProjectPage), typeof(NewProjectPage));
             Routing.RegisterRoute(nameof(AllLicensePage), typeof(AllLicensePage));
+            Routing.RegisterRoute(nameof(CreateProjectLoadingPage), typeof(CreateProjectLoadingPage));
+            Routing.RegisterRoute(nameof(EditorPage), typeof(EditorPage));
         }
     }
 }
