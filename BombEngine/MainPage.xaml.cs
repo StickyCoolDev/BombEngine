@@ -50,7 +50,7 @@ namespace BombEngine
             Platform.CurrentActivity.RequestedOrientation = Android.Content.PM.ScreenOrientation.Landscape;
             //window.SetNavigationBarColor(Android.Graphics.Color.White);
             window.DecorView.SystemUiVisibility = (StatusBarVisibility)(
-                    (int)SystemUiFlags.LayoutStable |
+                    (int)SystemUiFlags.LayoutFullscreen |
                     (int)SystemUiFlags.LayoutHideNavigation |
                     (int)SystemUiFlags.LayoutFullscreen |
                     (int)SystemUiFlags.HideNavigation |
