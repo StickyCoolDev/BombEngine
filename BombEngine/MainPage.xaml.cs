@@ -48,7 +48,7 @@ namespace BombEngine
 
             var window = Platform.CurrentActivity?.Window;
             Platform.CurrentActivity.RequestedOrientation = Android.Content.PM.ScreenOrientation.Landscape;
-            //window.SetNavigationBarColor(Android.Graphics.Color.White);
+            //window.SetNaw2
             window.DecorView.SystemUiVisibility = (StatusBarVisibility)(
                     (int)SystemUiFlags.LayoutFullscreen |
                     (int)SystemUiFlags.LayoutHideNavigation |
@@ -61,7 +61,6 @@ namespace BombEngine
             {
                 // Hide the status bar (API level 16+)
                 window.SetFlags(WindowManagerFlags.Fullscreen, WindowManagerFlags.Fullscreen);
-
             }
         }
     }

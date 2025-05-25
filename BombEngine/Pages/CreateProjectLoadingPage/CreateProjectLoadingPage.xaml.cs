@@ -14,11 +14,9 @@ namespace BombEngine
         }
 
 
-
+        // Function for writing 
         public async void WriteTextToFile(String text, String targetFileName, String FileDir)
         {
-
-            // Write the file content to the app data directory  
             string targetFile = System.IO.Path.Combine(FileDir, targetFileName);
             using FileStream outputStream = System.IO.File.OpenWrite(targetFile);
             using StreamWriter streamWriter = new StreamWriter(outputStream);
@@ -29,7 +27,10 @@ namespace BombEngine
         void _OnStart(String ProjectName, String ProjectPath)
         {
             Directory.CreateDirectory(ProjectPath + "/" + ProjectName);
-            WriteTextToFile("{'ProjectName': '" + ProjectName + "'}", "Bomb.json", ProjectPath + "/" + ProjectName);
+            string ProjectJson = $"{{ \"ProjectName\": \"{ProjectName}\" }}"; // make project file
+
+            WriteTextToFile(ProjectJson, "Bomb.bomb", ProjectPath + "/" + ProjectName);
+
         }
     }
 }
