@@ -1,4 +1,8 @@
-# package
+# BombEngine 
+a game engine made on a tablet!
+## why 
+beacause i dont have computer right now, mine is dead
+
 
 ## Project setup
 ```
@@ -25,5 +29,3 @@ npm run test:unit
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
